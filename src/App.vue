@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <home />
+  <div id="app" class="app">
+    <home style="height: 100%" />
   </div>
 </template>
 
@@ -14,3 +14,9 @@ export default {
   }
 };
 </script>
+
+<style>
+body {
+  margin: 0;
+}
+</style>
