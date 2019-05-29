@@ -14,10 +14,7 @@
     "element-ui": "^2.4.5",
     "qs.js": "^0.1.12",
     "vue": "^2.6.10",
-    "vue-aplayer": "^1.6.1",
-    "vue-aplyr": "0.0.7",
     "vue-axios": "^2.1.4",
-    "vue-cplayer": "^0.1.0",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },

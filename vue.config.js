@@ -12,6 +12,13 @@ module.exports = {
         pathRewrite: {
           "^/api/qq": "/"
         }
+      },
+      "/api/itool": {
+        target: "https://v1.itooi.cn",
+        changeOrigin: true,
+        pathRewrite: {
+          "^/api/itool": "/"
+        }
       }
     }
   },
