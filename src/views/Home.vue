@@ -19,7 +19,13 @@
 
     <search @playNow="playNow" @seeHotComments="seeHotComments"></search>
 
-    <aplayer ref="player" :audio="playlist" :lrcType="3" fixed />
+    <aplayer
+      v-if="playlist.length > 0"
+      ref="player"
+      :audio="playlist"
+      :lrcType="3"
+      fixed
+    />
 
     <el-dialog title="热门评论" :visible.sync="dialog_visible" width="75%">
       <el-card
@@ -77,17 +83,7 @@ export default {
     return {
       active: "search",
       result: {},
-      playlist: [
-        {
-          album: "ME! (feat. Brendon Urie of Panic! At The Disco)",
-          artist: "Taylor Swift / Brendon Urie",
-          id: 231729922,
-          name: "ME! (feat. Brendon Urie of Panic! At The Disco)",
-          cover:
-            "http://imgcache.qq.com/music/photo/album_300/74/300_albumpic_6690574_0.jpg",
-          url: "https://v1.itooi.cn/tencent/url?id=0032UZe62rZk9K"
-        }
-      ],
+      playlist: [],
       comments: [],
       dialog_visible: false
     };
